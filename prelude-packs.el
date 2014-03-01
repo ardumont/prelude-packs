@@ -71,12 +71,11 @@
                              "puppet-pack"
                              "chrome-pack"
                              "macro-pack"
-                             ;; "scala-pack"
+                             "scala-pack"
                              "elisp-pack"
                              "groovy-pack"
                              "php-pack"
-                             "stumpwm-pack"
-                             )))
+                             "stumpwm-pack")))
 
 (prelude-packs/load-packs prelude-packs)
 
