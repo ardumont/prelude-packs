@@ -56,7 +56,7 @@
                              "scratch-pack"
                              "blog-pack"             ;; a setup blog pack for wordpress
                              "haskell-pack"
-                             ;; "orgmode-pack"
+                             "orgmode-pack"
                              ;; "lisp-pack"
                              ;; "git-pack"
                              ;; "mail-pack"
