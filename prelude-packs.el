@@ -45,37 +45,40 @@
   "Load the packs"
   (mapc (lambda (pack-dir) (live-load-pack pack-dir)) prelude-packs))
 
+(require 'package)
+(package-initialize)
+
 (defvar prelude-packs
   (prelude-packs/add-packs "~/.prelude-packs/"
                            '("install-packages-pack" ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
-                             ;; ;;                                   "el-get-pack"
-                             ;;                            "buffer-pack" ;; a pack to mess around until drying stuff
-                             ;;                            "scratch-pack"
-                             ;;                            "blog-pack" ;; a setup blog pack for wordpress
-                             ;;                            "haskell-pack"
-                             ;;                            "orgmode-pack" ;; setup org-mode
-                             ;;                            "lisp-pack"
-                             ;;                            "git-pack"
-                             ;;                            "mail-pack" ;; setup mail credentials
-                             ;;                            "shell-pack"
-                             ;;                            "browser-pack"
-                             ;;                            "chat-pack" ;; irc credential setup
-                             ;;                            "clojure-pack"
-                             ;; ;;                                   "nrepl-pack"           ;; nrepl override bindings from nrepl
-                             ;;                            "clojurescript-pack"
-                             ;;                            "caml-pack"
-                             ;;                            "modeline-pack" ;; adding stuff regarding emacs modeline
-                             ;;                            "twitter-pack"
-                             ;;                            "puppet-pack"
-                             ;; ;;                                   "chrome-pack"          ;; chrome editing textarea using emacs
-                             ;;                            "macro-pack"
-                             ;;                            "scala-pack"
-                             ;;                            "elisp-pack"
-                             ;;                            "groovy-pack"
-                             ;;                            "php-pack"
-                             ;; ;;                                   "ctags-pack"
-                             ;;                            "prelude-pack"
-                             ;;                            "stumpwm-pack"
+                             "el-get-pack"
+                             "buffer-pack"           ;; a pack to deal with buffer manipulation
+                             "scratch-pack"
+                             "blog-pack"             ;; a setup blog pack for wordpress
+                             "haskell-pack"
+                             ;; "orgmode-pack"
+                             ;; "lisp-pack"
+                             ;; "git-pack"
+                             ;; "mail-pack"
+                             ;; "shell-pack"
+                             ;; "browser-pack"
+                             ;; "chat-pack"
+                             ;; "clojure-pack"
+                             ;; "nrepl-pack"
+                             ;; "clojurescript-pack"
+                             ;; "caml-pack"
+                             ;; "modeline-pack"
+                             ;; "twitter-pack"
+                             ;; "puppet-pack"
+                             ;; "chrome-pack"
+                             ;; "macro-pack"
+                             ;; "scala-pack"
+                             ;; "elisp-pack"
+                             ;; "groovy-pack"
+                             ;; "php-pack"
+                             ;; "ctags-pack"
+                             ;; "prelude-pack"
+                             ;; "stumpwm-pack"
                              )))
 
 (prelude-packs/load-packs prelude-packs)
