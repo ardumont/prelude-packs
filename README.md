@@ -30,16 +30,6 @@ Long story short:
 git clone git://github.com/bbatsov/prelude.git ~/.emacs.d
 ```
 
-### Preparation for prelude-packs
-
-Add this to `/path/to/prelude/personal/init.el` 
-
-``` lisp
-(let ((prelude-packs-file (expand-file-name "~/.prelude-packs/prelude-packs.el")))
-  (when (file-exists-p prelude-packs-file)
-    (load-file prelude-packs-file)))
-```
-
 ## Clone
 
 Clone the repository.
@@ -91,6 +81,9 @@ tony@dagobah(0,43,) 15:30:39 ~/repo/perso/emacs-live-packs (master) $ ll ~/.emac
 lrwxrwxrwx 1 tony tony 32 déc.  18 03:28 /home/tony/.emacs.d -> /home/tony/repo/perso/prelude
 lrwxrwxrwx 1 tony tony 39 avril 15 12:38 /home/tony/.prelude-packs -> /home/tony/repo/perso/prelude-packs/
 ```
+
+*Note*
+This will create a file *prelude-packs-delegate.el* in your *~/.emacs.d/personal/* folder that will be loaded by prelude and trigger the prelude-packs loading.
 
 ## Start
 
