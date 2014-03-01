@@ -57,8 +57,8 @@
                              "blog-pack"             ;; a setup blog pack for wordpress
                              "haskell-pack"
                              "orgmode-pack"
-                             ;; "lisp-pack"
                              ;; "git-pack"
+                             "lisp-pack"
                              ;; "mail-pack"
                              ;; "shell-pack"
                              ;; "browser-pack"
