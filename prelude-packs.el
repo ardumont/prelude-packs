@@ -62,7 +62,7 @@
                              "mail-pack"
                              "shell-pack"
                              "browser-pack"
-                             ;; "chat-pack"
+                             "chat-pack"
                              ;; "clojure-pack"
                              ;; "nrepl-pack"
                              ;; "clojurescript-pack"
