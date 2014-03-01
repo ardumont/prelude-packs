@@ -64,7 +64,7 @@
                              "browser-pack"
                              "chat-pack"
                              "clojure-pack"
-                             ;; "clojurescript-pack"
+                             "clojurescript-pack"
                              ;; "caml-pack"
                              ;; "modeline-pack"
                              ;; "twitter-pack"
