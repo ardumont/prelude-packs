@@ -22,10 +22,7 @@ before_install:
   - pwd
   # - deploy emacs-live
   - git clone http://git@github.com/bbatsov/prelude.git ~/.emacs.d
-  - cd ~/.emacs.d
-  - echo "(let ((prelude-packs-file (expand-file-name \"~/.prelude-packs/prelude.el\"))) (when (file-exists-p prelude-packs-file) (load-file prelude-packs-file)))" > personal/init.el
-  - cat personal/init.el
-  - cd -
+  - echo "(let ((prelude-packs-file (expand-file-name \"~/.prelude-packs/prelude.el\"))) (when (file-exists-p prelude-packs-file) (load-file prelude-packs-file)))" > ~/.emacs.d/personal/init.el
   # - deploy prelude-packs
   - $(pwd)/deploy.sh
 env:
