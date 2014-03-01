@@ -60,7 +60,7 @@
                              "lisp-pack"
                              "git-pack"
                              "mail-pack"
-                             ;; "shell-pack"
+                             "shell-pack"
                              ;; "browser-pack"
                              ;; "chat-pack"
                              ;; "clojure-pack"
