@@ -66,7 +66,7 @@
                              "clojure-pack"
                              "clojurescript-pack"
                              "caml-pack"
-                             ;; "modeline-pack"
+                             "modeline-pack"
                              ;; "twitter-pack"
                              ;; "puppet-pack"
                              ;; "chrome-pack"
