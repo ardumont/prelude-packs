@@ -31,9 +31,6 @@
 [submodule "clojurescript-pack"]
 	path = clojurescript-pack
 	url = git@github.com:ardumont/clojurescript-pack.git
-[submodule "ctags-pack"]
-	path = ctags-pack
-	url = git@github.com:ardumont/ctags-pack.git
 [submodule "elisp-pack"]
 	path = elisp-pack
 	url = git@github.com:ardumont/elisp-pack.git
