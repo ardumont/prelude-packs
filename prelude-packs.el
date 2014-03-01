@@ -71,6 +71,8 @@
 (require 'prelude-packs-internal)
 (require 'dash)
 
+;;; Uncomment the packs you'd like to use and reevaluate the form afterwards
+
 (->> '("install-packages-pack"
        "el-get-pack"
        "buffer-pack"
