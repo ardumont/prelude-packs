@@ -1,4 +1,4 @@
-;;; live-routine.el --- Minimal emacs-live routine to load user packs
+;;; prelude-packs-internal.el --- Minimal emacs-live routine to load user packs
 
 ;; Copyright (C) 2013 https://github.com/samaaron/
 
@@ -116,5 +116,13 @@
         (load-file pack-init))
     (setq live-current-pack-dir nil)))
 
-(provide 'live-routine)
-;;; live-routine ends here
+(defun prelude-packs/add-packs (path packs)
+  "Utility function to help in installing packs (bunch of user packs)"
+  (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
+
+(defun prelude-packs/load-packs (paths)
+  "Load the packs"
+  (mapc (lambda (pack-dir) (live-load-pack pack-dir)) prelude-packs))
+
+(provide 'prelude-packs-internal)
+;;; prelude-packs-internal.el ends here

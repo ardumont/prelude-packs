@@ -66,45 +66,36 @@
 
 
 
-(load-file (expand-file-name (format "~/.prelude-packs/live-routine.el")))
-(require 'live-routine)
+(load-file (expand-file-name (format "~/.prelude-packs/prelude-packs-internal.el")))
+(require 'prelude-packs-internal)
 
-(defun prelude-packs/add-packs (path packs)
-  "Utility function to help in installing packs (bunch of user packs)"
-  (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
-
-(defun prelude-packs/load-packs (paths)
-  "Load the packs"
-  (mapc (lambda (pack-dir) (live-load-pack pack-dir)) prelude-packs))
-
-(defvar prelude-packs
-  (prelude-packs/add-packs "~/.prelude-packs/"
-                           '("install-packages-pack"
-                             "el-get-pack"
-                             "buffer-pack"
-                             "scratch-pack"
-                             "blog-pack"
-                             "haskell-pack"
-                             "orgmode-pack"
-                             "lisp-pack"
-                             "git-pack"
-                             "mail-pack"
-                             "shell-pack"
-                             "browser-pack"
-                             "chat-pack"
-                             "clojure-pack"
-                             "clojurescript-pack"
-                             "caml-pack"
-                             "modeline-pack"
-                             "twitter-pack"
-                             "puppet-pack"
-                             "chrome-pack"
-                             "macro-pack"
-                             "scala-pack"
-                             "elisp-pack"
-                             "groovy-pack"
-                             "php-pack"
-                             "stumpwm-pack")))
+(defvar prelude-packs (prelude-packs/add-packs "~/.prelude-packs/"
+                                               '("install-packages-pack"
+                                                 "el-get-pack"
+                                                 "buffer-pack"
+                                                 "scratch-pack"
+                                                 "blog-pack"
+                                                 "haskell-pack"
+                                                 "orgmode-pack"
+                                                 "lisp-pack"
+                                                 "git-pack"
+                                                 "mail-pack"
+                                                 "shell-pack"
+                                                 "browser-pack"
+                                                 "chat-pack"
+                                                 "clojure-pack"
+                                                 "clojurescript-pack"
+                                                 "caml-pack"
+                                                 "modeline-pack"
+                                                 "twitter-pack"
+                                                 "puppet-pack"
+                                                 "chrome-pack"
+                                                 "macro-pack"
+                                                 "scala-pack"
+                                                 "elisp-pack"
+                                                 "groovy-pack"
+                                                 "php-pack"
+                                                 "stumpwm-pack")))
 
 (prelude-packs/load-packs prelude-packs)
 
