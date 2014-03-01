@@ -5,7 +5,7 @@ A prelude packs setup to use with the most excellent [prelude](https://github.co
 
 This is mostly a way to permit the use of prelude with your `agnostic` (in sense of emacs-live's API) emacs-live user packs.
 
-# pack list
+# Packs
 
 Some packs still need some lovin' but most are ready:
 
