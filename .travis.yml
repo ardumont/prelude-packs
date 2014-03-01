@@ -24,8 +24,9 @@ before_install:
   - git clone http://git@github.com/bbatsov/prelude.git ~/.emacs.d
   - cd ~/.emacs.d
   - echo "(let ((prelude-packs-file (expand-file-name \"~/.prelude-packs/prelude.el\"))) (when (file-exists-p prelude-packs-file) (load-file prelude-packs-file)))" > personal/init.el
+  - cat personal/init.el
   - cd -
-  # - deploy prelude
+  # - deploy prelude-packs
   - $(pwd)/deploy.sh
 env:
   #- EMACS=emacs
