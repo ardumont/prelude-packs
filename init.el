@@ -33,6 +33,7 @@
 ;;; Code:
 
 
+(add-to-list 'load-path (expand-file-name "."))
 (load-file "live-routine.el")
 (require 'live-routine)
 
