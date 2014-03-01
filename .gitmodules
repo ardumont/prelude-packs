@@ -1,3 +1,78 @@
 [submodule "install-packages-pack"]
 	path = install-packages-pack
 	url = git@github.com:ardumont/install-packages-pack.git
+[submodule "el-get-pack"]
+	path = el-get-pack
+	url = git@github.com:ardumont/el-get-pack.git
+[submodule "buffer-pack"]
+	path = buffer-pack
+	url = git@github.com:ardumont/buffer-pack.git
+[submodule "scratch-pack"]
+	path = scratch-pack
+	url = git@github.com:ardumont/scratch-pack.git
+[submodule "blog-pack"]
+	path = blog-pack
+	url = git@github.com:ardumont/blog-pack.git
+[submodule "browser-pack"]
+	path = browser-pack
+	url = git@github.com:ardumont/browser-pack.git
+[submodule "caml-pack"]
+	path = caml-pack
+	url = git@github.com:ardumont/caml-pack.git
+[submodule "chat-pack"]
+	path = chat-pack
+	url = git@github.com:ardumont/chat-pack.git
+[submodule "chrome-pack"]
+	path = chrome-pack
+	url = git@github.com:ardumont/chrome-pack.git
+[submodule "clojure-pack"]
+	path = clojure-pack
+	url = git@github.com:ardumont/clojure-pack.git
+[submodule "clojurescript-pack"]
+	path = clojurescript-pack
+	url = git@github.com:ardumont/clojurescript-pack.git
+[submodule "elisp-pack"]
+	path = elisp-pack
+	url = git@github.com:ardumont/elisp-pack.git
+[submodule "git-pack"]
+	path = git-pack
+	url = git@github.com:ardumont/git-pack.git
+[submodule "groovy-pack"]
+	path = groovy-pack
+	url = git@github.com:ardumont/groovy-pack.git
+[submodule "haskell-pack"]
+	path = haskell-pack
+	url = git@github.com:ardumont/haskell-pack.git
+[submodule "lisp-pack"]
+	path = lisp-pack
+	url = git@github.com:ardumont/lisp-pack.git
+[submodule "macro-pack"]
+	path = macro-pack
+	url = git@github.com:ardumont/macro-pack.git
+[submodule "mail-pack"]
+	path = mail-pack
+	url = git@github.com:ardumont/mail-pack.git
+[submodule "modeline-pack"]
+	path = modeline-pack
+	url = git@github.com:ardumont/modeline-pack.git
+[submodule "orgmode-pack"]
+	path = orgmode-pack
+	url = git@github.com:ardumont/orgmode-pack.git
+[submodule "php-pack"]
+	path = php-pack
+	url = git@github.com:ardumont/php-pack.git
+[submodule "puppet-pack"]
+	path = puppet-pack
+	url = git@github.com:ardumont/puppet-pack.git
+[submodule "scala-pack"]
+	path = scala-pack
+	url = git@github.com:ardumont/scala-pack.git
+[submodule "shell-pack"]
+	path = shell-pack
+	url = git@github.com:ardumont/shell-pack.git
+[submodule "stumpwm-pack"]
+	path = stumpwm-pack
+	url = git@github.com:ardumont/stumpwm-pack.git
+[submodule "twitter-pack"]
+	path = twitter-pack
+	url = git@github.com:ardumont/twitter-pack.git

@@ -33,8 +33,40 @@
 ;;; Code:
 
 
-(add-to-list 'load-path (expand-file-name "."))
-(load-file "live-routine.el")
+;; Standard prelude
+
+;;; Uncomment the modules you'd like to use and restart Prelude afterwards
+
+(require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
+;; (require 'prelude-helm) ;; Interface for narrowing and search
+
+(require 'prelude-c)
+(require 'prelude-clojure)
+;; (require 'prelude-coffee)
+(require 'prelude-common-lisp)
+;; (require 'prelude-css)
+(require 'prelude-emacs-lisp)
+(require 'prelude-erc) ;; Emacs IRC client
+;; (require 'prelude-erlang)
+(require 'prelude-haskell)
+(require 'prelude-js)
+;; (require 'prelude-key-chord) ;; Binds useful features to key combinations
+;; (require 'prelude-latex)
+(require 'prelude-lisp)
+;; (require 'prelude-mediawiki)
+(require 'prelude-org) ;; Org-mode helps you keep TODO lists, notes and more
+(require 'prelude-perl)
+;; (require 'prelude-python)
+;; (require 'prelude-ruby)
+;; (require 'prelude-scala)
+(require 'prelude-scheme)
+;; (require 'prelude-scss)
+;; (require 'prelude-web) ;; Emacs mode for web templates
+(require 'prelude-xml)
+
+
+
+(load-file (expand-file-name (format "~/.prelude-packs/live-routine.el")))
 (require 'live-routine)
 
 (defun prelude-packs/add-packs (path packs)
@@ -47,36 +79,32 @@
 
 (defvar prelude-packs
   (prelude-packs/add-packs "~/.prelude-packs/"
-                           '("install-packages-pack" ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
-                             ;; ;;                                   "el-get-pack"
-                             ;;                            "buffer-pack" ;; a pack to mess around until drying stuff
-                             ;;                            "scratch-pack"
-                             ;;                            "blog-pack" ;; a setup blog pack for wordpress
-                             ;;                            "haskell-pack"
-                             ;;                            "orgmode-pack" ;; setup org-mode
-                             ;;                            "lisp-pack"
-                             ;;                            "git-pack"
-                             ;;                            "mail-pack" ;; setup mail credentials
-                             ;;                            "shell-pack"
-                             ;;                            "browser-pack"
-                             ;;                            "chat-pack" ;; irc credential setup
-                             ;;                            "clojure-pack"
-                             ;; ;;                                   "nrepl-pack"           ;; nrepl override bindings from nrepl
-                             ;;                            "clojurescript-pack"
-                             ;;                            "caml-pack"
-                             ;;                            "modeline-pack" ;; adding stuff regarding emacs modeline
-                             ;;                            "twitter-pack"
-                             ;;                            "puppet-pack"
-                             ;; ;;                                   "chrome-pack"          ;; chrome editing textarea using emacs
-                             ;;                            "macro-pack"
-                             ;;                            "scala-pack"
-                             ;;                            "elisp-pack"
-                             ;;                            "groovy-pack"
-                             ;;                            "php-pack"
-                             ;; ;;                                   "ctags-pack"
-                             ;;                            "prelude-pack"
-                             ;;                            "stumpwm-pack"
-                             )))
+                           '("install-packages-pack"
+                             "el-get-pack"
+                             "buffer-pack"
+                             "scratch-pack"
+                             "blog-pack"
+                             "haskell-pack"
+                             "orgmode-pack"
+                             "lisp-pack"
+                             "git-pack"
+                             "mail-pack"
+                             "shell-pack"
+                             "browser-pack"
+                             "chat-pack"
+                             "clojure-pack"
+                             "clojurescript-pack"
+                             "caml-pack"
+                             "modeline-pack"
+                             "twitter-pack"
+                             "puppet-pack"
+                             "chrome-pack"
+                             "macro-pack"
+                             "scala-pack"
+                             "elisp-pack"
+                             "groovy-pack"
+                             "php-pack"
+                             "stumpwm-pack")))
 
 (prelude-packs/load-packs prelude-packs)
 
