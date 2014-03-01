@@ -61,7 +61,7 @@
                              "git-pack"
                              "mail-pack"
                              "shell-pack"
-                             ;; "browser-pack"
+                             "browser-pack"
                              ;; "chat-pack"
                              ;; "clojure-pack"
                              ;; "nrepl-pack"
