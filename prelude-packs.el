@@ -67,7 +67,7 @@
                              "clojurescript-pack"
                              "caml-pack"
                              "modeline-pack"
-                             ;; "twitter-pack"
+                             "twitter-pack"
                              ;; "puppet-pack"
                              ;; "chrome-pack"
                              ;; "macro-pack"
@@ -75,8 +75,6 @@
                              ;; "elisp-pack"
                              ;; "groovy-pack"
                              ;; "php-pack"
-                             ;; "ctags-pack"
-                             ;; "prelude-pack"
                              ;; "stumpwm-pack"
                              )))
 
