@@ -45,9 +45,6 @@
   "Load the packs"
   (mapc (lambda (pack-dir) (live-load-pack pack-dir)) prelude-packs))
 
-(require 'package)
-(package-initialize)
-
 (defvar prelude-packs
   (prelude-packs/add-packs "~/.prelude-packs/"
                            '("install-packages-pack" ;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
