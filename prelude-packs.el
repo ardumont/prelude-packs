@@ -59,7 +59,7 @@
                              "orgmode-pack"
                              "lisp-pack"
                              "git-pack"
-                             ;; "mail-pack"
+                             "mail-pack"
                              ;; "shell-pack"
                              ;; "browser-pack"
                              ;; "chat-pack"
