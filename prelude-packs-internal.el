@@ -120,9 +120,9 @@
   "Utility function to help in installing packs (bunch of user packs)"
   (live-add-packs (mapcar (lambda (pack) (concat path pack)) packs)))
 
-(defun prelude-packs/load-packs (paths)
+(defun prelude-packs/load-packs (packs)
   "Load the packs"
-  (mapc (lambda (pack-dir) (live-load-pack pack-dir)) prelude-packs))
+  (mapc (lambda (pack-dir) (live-load-pack pack-dir)) packs))
 
 (provide 'prelude-packs-internal)
 ;;; prelude-packs-internal.el ends here
