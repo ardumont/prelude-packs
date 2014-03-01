@@ -23,6 +23,7 @@ before_install:
   # - deploy emacs-live
   - git clone http://git@github.com/bbatsov/prelude.git ~/.emacs.d
   - cd ~/.emacs.d
+  - echo "(let ((prelude-packs-file (expand-file-name \"~/.prelude-packs/prelude.el\"))) (when (file-exists-p prelude-packs-file) (load-file prelude-packs-file)))" > personal/init.el
   - git checkout personal
   - cd -
   # - deploy prelude
