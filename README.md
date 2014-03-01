@@ -35,7 +35,7 @@ git clone git://github.com/bbatsov/prelude.git ~/.emacs.d
 Add this to `/path/to/prelude/personal/init.el` 
 
 ``` lisp
-(let ((prelude-packs-file (expand-file-name "~/.prelude-packs/init.el")))
+(let ((prelude-packs-file (expand-file-name "~/.prelude-packs/prelude-packs.el")))
   (when (file-exists-p prelude-packs-file)
     (load-file prelude-packs-file)))
 ```
