@@ -63,7 +63,6 @@
                              "shell-pack"
                              "browser-pack"
                              "chat-pack"
-                             ;; "nrepl-pack"
                              "clojure-pack"
                              ;; "clojurescript-pack"
                              ;; "caml-pack"
