@@ -1,0 +1,3 @@
+[submodule "install-packages-pack"]
+	path = install-packages-pack
+	url = git@github.com:ardumont/install-packages-pack.git
