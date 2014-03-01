@@ -68,14 +68,14 @@
                              "caml-pack"
                              "modeline-pack"
                              "twitter-pack"
-                             ;; "puppet-pack"
-                             ;; "chrome-pack"
-                             ;; "macro-pack"
+                             "puppet-pack"
+                             "chrome-pack"
+                             "macro-pack"
                              ;; "scala-pack"
-                             ;; "elisp-pack"
-                             ;; "groovy-pack"
-                             ;; "php-pack"
-                             ;; "stumpwm-pack"
+                             "elisp-pack"
+                             "groovy-pack"
+                             "php-pack"
+                             "stumpwm-pack"
                              )))
 
 (prelude-packs/load-packs prelude-packs)
