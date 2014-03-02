@@ -105,7 +105,7 @@
   "Load a live pack. This is a dir that contains at least the
   files pack-info.el and init.el. Adds the packs's lib dir
   to the load-path"
-  (message (concat "\n\n==> Loading Emacs Live Pack: " pack-dir))
+  (message (concat "\n\n==> Loading Pack: " pack-dir))
   (let* ((pack-dir  (file-name-as-directory pack-dir))
          (pack-info (concat pack-dir "info.el"))
          (pack-init (concat pack-dir "init.el")))
