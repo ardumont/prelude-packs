@@ -74,6 +74,7 @@
 ;;; Uncomment the packs you'd like to use and reevaluate the form afterwards
 
 (->> '("install-packages-pack"
+       "prelude-pack"
        "theme-pack"
        "el-get-pack"
        "buffer-pack"
