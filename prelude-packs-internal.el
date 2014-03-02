@@ -42,6 +42,10 @@
 (defvar live-current-pack-name nil "The name of the pack being currently loaded")
 (defvar live-current-pack-description nil "The description of the pack being currently loaded")
 
+(defun live-pack-config-dir ()
+  "Returns the path of the config dir for the current pack"
+  (file-name-as-directory (concat live-current-pack-dir "config")))
+
 (defun live-pack-version (version)
   "Specify the version of the current pack. This should typically
    only be used in the pack's info.el file"
