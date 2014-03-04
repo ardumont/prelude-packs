@@ -71,7 +71,7 @@
 (require 'prelude-packs-internal)
 (require 'dash)
 
-;;; Uncomment the packs you'd like to use and reevaluate the form afterwards
+;;; Comment out the packs you won't use and reevaluate the form afterwards (C-M-x)
 
 (->> '("install-packages-pack"
        "prelude-pack"
