@@ -23,14 +23,14 @@ Some packs still need some lovin' but most are ready:
 - [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
 - [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
 - [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          All lisp (clojure, common-lisp) setup pack
+- [elisp-pack](https://github.com/ardumont/elisp-pack)                        Emacs-lisp pack (more specific than the previous one)
+- [macro-pack](https://github.com/ardumont/macro-pack)                        Macro setup
 - [caml-pack](https://github.com/ardumont/caml-pack)                          ML family languages setup
 - [twitter-pack](https://github.com/ardumont/twitter-pack)                    Twitter setup
 - [puppet-pack](https://github.com/ardumont/puppet-pack)                      Puppet setup
 - [chrome-pack](https://github.com/ardumont/chrome-pack)                      Chrome setup
-- [macro-pack](https://github.com/ardumont/macro-pack)                        Macro setup
 - [scala-pack](https://github.com/ardumont/scala-pack)                        Scala pack
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          All lisp (clojure, common-lisp) setup pack
-- [elisp-pack](https://github.com/ardumont/elisp-pack)                        Emacs-lisp pack (more specific than the previous one)
 - [el-get-pack](https://github.com/ardumont/el-get-pack)                      Attempt to permit the use of el-get
 - [groovy-pack](https://github.com/ardumont/groovy-pack)                      Pack to add groovy mode
 - [modeline-pack](https://github.com/ardumont/modeline-pack)                  Improve modeline rendering
