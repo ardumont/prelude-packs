@@ -100,7 +100,8 @@
        "elisp-pack"
        "groovy-pack"
        "php-pack"
-       "stumpwm-pack")
+       "stumpwm-pack"
+       "pres-pack")
      (prelude-packs/add-packs "~/.prelude-packs/")
      prelude-packs/load-packs)
 
