@@ -22,7 +22,6 @@ Some packs still need some lovin' but most are ready:
 - [browser-pack](https://github.com/ardumont/browser-pack)                    browser specific tryouts
 - [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
 - [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
-- [nrepl-pack](https://github.com/ardumont/nrepl-pack)                        nrepl override setup
 - [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
 - [caml-pack](https://github.com/ardumont/caml-pack)                          ML family languages setup
 - [twitter-pack](https://github.com/ardumont/twitter-pack)                    Twitter setup
