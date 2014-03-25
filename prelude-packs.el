@@ -73,37 +73,47 @@
 
 ;;; Comment out the packs you won't use and reevaluate the form afterwards (C-M-x)
 
-(->> '("install-packages-pack"
-       "prelude-pack"
-       "theme-pack"
-       "el-get-pack"
-       "buffer-pack"
-       "scratch-pack"
-       "blog-pack"
-       "haskell-pack"
-       "orgmode-pack"
-       "lisp-pack"
-       "git-pack"
-       "mail-pack"
-       "shell-pack"
-       "browser-pack"
-       "chat-pack"
-       "clojure-pack"
-       "clojurescript-pack"
-       "caml-pack"
-       "modeline-pack"
-       "twitter-pack"
-       "puppet-pack"
-       "chrome-pack"
-       "macro-pack"
-       "scala-pack"
-       "elisp-pack"
-       "groovy-pack"
-       "php-pack"
-       "stumpwm-pack"
-       "pres-pack")
-     (prelude-packs/add-packs "~/.prelude-packs/")
-     prelude-packs/load-packs)
+(defun prelude-packs/load-packs! ()
+  (interactive)
+  (->> '("install-packages-pack"
+         "prelude-pack"
+         "theme-pack"
+         "el-get-pack"
+         "buffer-pack"
+         "scratch-pack"
+         "blog-pack"
+         "haskell-pack"
+         "orgmode-pack"
+         "lisp-pack"
+         "git-pack"
+         "mail-pack"
+         "shell-pack"
+         "browser-pack"
+         "chat-pack"
+         "clojure-pack"
+         "clojurescript-pack"
+         "caml-pack"
+         "modeline-pack"
+         "twitter-pack"
+         "puppet-pack"
+         "chrome-pack"
+         "macro-pack"
+         "scala-pack"
+         "elisp-pack"
+         "groovy-pack"
+         "php-pack"
+         "stumpwm-pack"
+         "pres-pack")
+    (prelude-packs/add-packs "~/.prelude-packs/" )
+    prelude-packs/load-packs))
+
+(defun prelude-packs/reload-partial-packs! ()
+  "Interactive function to help in reload some packs."
+  (interactive)
+  (->> '("orgmode-pack")
+    prelude-packs/load-packs))
+
+(prelude-packs/load-packs!)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
