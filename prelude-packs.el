@@ -103,7 +103,8 @@
          "groovy-pack"
          "php-pack"
          "stumpwm-pack"
-         "pres-pack")
+         "pres-pack"
+         "irc-pack")
     (prelude-packs/add-packs "~/.prelude-packs/" )
     prelude-packs/load-packs))
 

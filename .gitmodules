@@ -85,3 +85,6 @@
 [submodule "pres-pack"]
 	path = pres-pack
 	url = git@github.com:ardumont/pres-pack.git
+[submodule "irc-pack"]
+	path = irc-pack
+	url = git@github.com:ardumont/irc-pack.git
