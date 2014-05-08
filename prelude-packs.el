@@ -66,9 +66,6 @@
 
 
 
-(load-file (expand-file-name (format "~/.prelude-packs/prelude-packs-internal.el")))
-
-(require 'prelude-packs-internal)
 (require 'dash)
 
 ;;; Comment out the packs you won't use and reevaluate the form afterwards (C-M-x)
