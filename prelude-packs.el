@@ -106,7 +106,7 @@
          "pres-pack"
          "irc-pack"
          "help-pack")
-    (prelude-packs/add-packs "~/.prelude-packs/" )
+    (prelude-packs/add-packs "~/.prelude-packs/")
     prelude-packs/load-packs))
 
 (defun prelude-packs/reload-partial-packs! ()
