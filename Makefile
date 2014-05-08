@@ -9,3 +9,7 @@ push:
 update-modules:
 	~/bin/git/git-merge-submodules.sh
 	git commit -am "Update deps"
+
+push-sub:
+	~/bin/git/git-push-submodules.sh
+	make push
