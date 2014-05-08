@@ -74,6 +74,7 @@
 ;;; Comment out the packs you won't use and reevaluate the form afterwards (C-M-x)
 
 (defun prelude-packs/load-packs! ()
+  "Load the packs in prelude-packs in the load-path."
   (interactive)
   (->> '("install-packages-pack"
          "prelude-pack"
@@ -106,16 +107,41 @@
          "pres-pack"
          "irc-pack"
          "help-pack")
-    (prelude-packs/add-packs "~/.prelude-packs/")
-    prelude-packs/load-packs))
-
-(defun prelude-packs/reload-partial-packs! ()
-  "Interactive function to help in reload some packs."
-  (interactive)
-  (->> '("orgmode-pack")
-    prelude-packs/load-packs))
+    (--map (add-to-list 'load-path (format "~/.prelude-packs/%s" it)))))
 
 (prelude-packs/load-packs!)
+
+(require 'install-packages-pack)
+(require 'prelude-pack)
+(require 'theme-pack)
+(require 'el-get-pack)
+(require 'buffer-pack)
+(require 'scratch-pack)
+(require 'blog-pack)
+(require 'haskell-pack)
+(require 'orgmode-pack)
+(require 'lisp-pack)
+(require 'git-pack)
+(require 'mail-pack)
+(require 'shell-pack)
+(require 'browser-pack)
+;;(require 'chat-pack)
+(require 'clojure-pack)
+(require 'clojurescript-pack)
+(require 'caml-pack)
+(require 'modeline-pack)
+(require 'twitter-pack)
+(require 'puppet-pack)
+;; (require 'chrome-pack)
+(require 'macro-pack)
+(require 'scala-pack)
+(require 'elisp-pack)
+(require 'groovy-pack)
+(require 'php-pack)
+(require 'stumpwm-pack)
+(require 'pres-pack)
+(require 'irc-pack)
+(require 'help-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
