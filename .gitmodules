@@ -88,3 +88,6 @@
 [submodule "irc-pack"]
 	path = irc-pack
 	url = git@github.com:ardumont/irc-pack.git
+[submodule "help-pack"]
+	path = help-pack
+	url = git@github.com:ardumont/help-pack.git

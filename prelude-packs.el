@@ -104,7 +104,8 @@
          "php-pack"
          "stumpwm-pack"
          "pres-pack"
-         "irc-pack")
+         "irc-pack"
+         "help-pack")
     (prelude-packs/add-packs "~/.prelude-packs/" )
     prelude-packs/load-packs))
 
