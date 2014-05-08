@@ -4,7 +4,7 @@
 
 ;; Author: Antoine R. Dumont <eniotna.t AT gmail.com>
 ;; Maintainer: Antoine R. Dumont <eniotna.t AT gmail.com>
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Package-Requires:
 ;; Keywords: prelude packs
 ;; URL: https://github.com/ardumont/prelude-packs
@@ -33,9 +33,9 @@
 ;;; Code:
 
 
-;; Standard prelude
+;; #### Standard prelude
 
-;;; Uncomment the modules you'd like to use and restart Prelude afterwards
+;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
 (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
 ;; (require 'prelude-helm) ;; Interface for narrowing and search
@@ -64,49 +64,20 @@
 ;; (require 'prelude-web) ;; Emacs mode for web templates
 (require 'prelude-xml)
 
-
+;; #### prelude-packs
 
-(require 'dash)
+(defvar prelude-packs-dir "~/.prelude-packs"
+  "The root dir of prelude-packs distribution.")
 
-;;; Comment out the packs you won't use and reevaluate the form afterwards (C-M-x)
+;; add subfolder to the load-path
+(prelude-add-subfolders-to-load-path prelude-packs-dir)
 
-(defun prelude-packs/load-packs! ()
-  "Load the packs in prelude-packs in the load-path."
+(defun prelude-packs/byte-compile! ()
+  "Byte-compile all your dotfiles again."
   (interactive)
-  (->> '("install-packages-pack"
-         "prelude-pack"
-         "theme-pack"
-         "el-get-pack"
-         "buffer-pack"
-         "scratch-pack"
-         "blog-pack"
-         "haskell-pack"
-         "orgmode-pack"
-         "lisp-pack"
-         "git-pack"
-         "mail-pack"
-         "shell-pack"
-         "browser-pack"
-         "chat-pack"
-         "clojure-pack"
-         "clojurescript-pack"
-         "caml-pack"
-         "modeline-pack"
-         "twitter-pack"
-         "puppet-pack"
-         "chrome-pack"
-         "macro-pack"
-         "scala-pack"
-         "elisp-pack"
-         "groovy-pack"
-         "php-pack"
-         "stumpwm-pack"
-         "pres-pack"
-         "irc-pack"
-         "help-pack")
-    (--map (add-to-list 'load-path (format "~/.prelude-packs/%s" it)))))
+  (byte-recompile-directory prelude-packs-dir 0 'do-force-recompile))
 
-(prelude-packs/load-packs!)
+;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
 (require 'install-packages-pack)
 (require 'prelude-pack)
