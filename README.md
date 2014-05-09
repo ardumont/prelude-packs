@@ -3,26 +3,34 @@ prelude-packs [![Build Status](https://travis-ci.org/ardumont/prelude-packs.png?
 
 A prelude packs setup to use with the most excellent [prelude](https://github.com/bbatsov/prelude).
 
-This is mostly a way to permit the use of prelude with your `agnostic` (in sense of emacs-live's API) emacs-live user packs.
+# Context
+
+- I used emacs-starter-kit (which is great) then migrated to emacs-live (which is also great).
+- Along the way, I developed some code on my own.
+- This code, little by little, became standardized the emacs-live way through the notion of packs (it's still emacs-lisp inside).
+- I still like this notion. It goes well with the `separation of concerns` concept.
+- So I kept them, agnostified them to permit the use outside of emacs-live.
+- Now I can discover any other emacs distribution (prelude for example) without losing my existing code.
+- This code is rather user agnostic too so it can be used by other people too.
 
 # Packs
 
 Some packs still need some lovin' but most are ready:
 
-- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  some installation repository setup + function to install list of packages
+- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  Some installation repository setup + function to install list of packages
 - [scratch-pack](https://github.com/ardumont/scratch-pack)                    Tinkering pack
-- [blog-pack](https://github.com/ardumont/blog-pack)                          blog setup to rapidly post article from org-mode to wordpress
-- [haskell-pack](https://github.com/ardumont/haskell-pack)                    haskell environment setup
-- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    some org-mode specificities
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          lisp environment setup
-- [buffer-pack](https://github.com/ardumont/buffer-pack)                      some buffer manipulation functions
-- [git-pack](https://github.com/ardumont/git-pack)                            git specific setup
-- [mail-pack](https://github.com/ardumont/mail-pack)                          email setup
-- [shell-pack](https://github.com/ardumont/shell-pack)                        shell setup
-- [browser-pack](https://github.com/ardumont/browser-pack)                    browser specific tryouts
-- [chat-pack](https://github.com/ardumont/chat-pack)                          irc setup
-- [clojure-pack](https://github.com/ardumont/clojure-pack)                    clojure override from emacs-live's defaults + other stuff
-- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        clojurescript setup
+- [blog-pack](https://github.com/ardumont/blog-pack)                          Blog setup to rapidly post article from org-mode to wordpress
+- [haskell-pack](https://github.com/ardumont/haskell-pack)                    Haskell environment setup
+- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    Some org-mode specificities
+- [lisp-pack](https://github.com/ardumont/lisp-pack)                          Lisp environment setup
+- [buffer-pack](https://github.com/ardumont/buffer-pack)                      Some buffer manipulation functions
+- [git-pack](https://github.com/ardumont/git-pack)                            Git specific setup
+- [mail-pack](https://github.com/ardumont/mail-pack)                          Email accounts setup (one or multiple accounts through authentication file setup)
+- [shell-pack](https://github.com/ardumont/shell-pack)                        Shell setup
+- [browser-pack](https://github.com/ardumont/browser-pack)                    Browser specific tryouts
+- [chat-pack](https://github.com/ardumont/chat-pack)                          IRC setup
+- [clojure-pack](https://github.com/ardumont/clojure-pack)                    Clojure override from emacs-live's defaults + other stuff
+- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        Clojurescript setup
 - [lisp-pack](https://github.com/ardumont/lisp-pack)                          All lisp (clojure, common-lisp) setup pack
 - [elisp-pack](https://github.com/ardumont/elisp-pack)                        Emacs-lisp pack (more specific than the previous one)
 - [macro-pack](https://github.com/ardumont/macro-pack)                        Macro setup
@@ -35,10 +43,10 @@ Some packs still need some lovin' but most are ready:
 - [groovy-pack](https://github.com/ardumont/groovy-pack)                      Pack to add groovy mode
 - [modeline-pack](https://github.com/ardumont/modeline-pack)                  Improve modeline rendering
 - [php-pack](https://github.com/ardumont/php-pack)                            PHP mode
-- [prelude-pack](https://github.com/ardumont/prelude-pack)                    A pack to override some prelude core default
-- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the repl
-- [pres-pack](https://github.com/ardumont/pres-pack)                          Pack to make presentation using org-mode and org-reveal
-- [irc-pack](https://github.com/ardumont/irc-pack)                            Pack to setup irc once with .netrc file
+- [prelude-pack](https://github.com/ardumont/prelude-pack)                    A pack to override some prelude core default (bindings mostly)
+- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the REPL
+- [pres-pack](https://github.com/ardumont/pres-pack)                          Pack to make presentation fast (using org-mode and org-reveal and revealjs)
+- [irc-pack](https://github.com/ardumont/irc-pack)                            Pack to setup IRC once with .netrc file
 
 *Note*
 This pack is an orchestrator.
