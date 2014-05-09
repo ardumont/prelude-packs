@@ -79,17 +79,45 @@ This utility function is used throughout all the [referenced packs](#pack-list).
 
 ### Adding/Removing packs
 
-To add or remove packs, simply edit the `.prelude-packs.el` and add or remove packs from the list.
+To add or remove packs, simply edit the `.prelude-packs.el` and comments packs from the list.
 
 For example, to simply install orgmode-pack and the blog-pack, do as follow:
 ```elisp
-;; all the other packs needed
-(add-live-packs "~/.emacs-live-packs/" '(;; installing emacs repositories (melpa, milkbox, marmalade) and the install-packs utility function
-                                         "install-packages-pack"
-                                         ;; setup org-mode
-                                         "orgmode-pack"
-                                         ;; a setup blog pack for wordpress
-                                         "blog-pack"))
+;;(require 'install-packages-pack)
+;;(require 'prelude-pack)
+;;(require 'theme-pack)
+;;(require 'el-get-pack)
+;;(require 'buffer-pack)
+;;(require 'scratch-pack)
+
+(require 'blog-pack)
+
+;;(require 'haskell-pack)
+
+(require 'orgmode-pack)
+
+;;(require 'lisp-pack)
+;;(require 'git-pack)
+;;(require 'mail-pack)
+;;(require 'shell-pack)
+;;(require 'browser-pack)
+;;(require 'chat-pack)
+;;(require 'clojure-pack)
+;;(require 'clojurescript-pack)
+;;(require 'caml-pack)
+;;(require 'modeline-pack)
+;;(require 'twitter-pack)
+;;(require 'puppet-pack)
+;;(require 'chrome-pack)
+;;(require 'macro-pack)
+;;(require 'scala-pack)
+;;(require 'elisp-pack)
+;;(require 'groovy-pack)
+;;(require 'php-pack)
+;;(require 'stumpwm-pack)
+;;(require 'pres-pack)
+;;(require 'irc-pack)
+;;(require 'help-pack)
 
 ```
 
