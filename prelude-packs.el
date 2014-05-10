@@ -67,7 +67,7 @@
 ;; #### prelude-packs
 
 (defvar prelude-packs-dir "~/.prelude-packs"
-  "The root dir of prelude-packs distribution.")
+  "The root directory of prelude-packs distribution.")
 
 ;; add subfolder to the load-path
 (prelude-add-subfolders-to-load-path prelude-packs-dir)
@@ -77,39 +77,30 @@
   (interactive)
   (byte-recompile-directory prelude-packs-dir 0 'do-force-recompile))
 
+(defun prelude-packs/pack-names (parent-dir)
+  "Add all pack names from the PARENT-DIR."
+  (--> parent-dir
+    (directory-files it nil "^[a-zA-z-]*$")
+    (-filter #'file-directory-p it)
+    (mapcar #'intern it)))
+
 ;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
-(require 'install-packages-pack)
-(require 'prelude-pack)
-(require 'elisp-pack)
-(require 'shell-pack)
-(require 'theme-pack)
-(require 'el-get-pack)
-(require 'buffer-pack)
-(require 'scratch-pack)
-(require 'blog-pack)
-(require 'haskell-pack)
-(require 'orgmode-pack)
-(require 'lisp-pack)
-(require 'git-pack)
-(require 'mail-pack)
-(require 'browser-pack)
-;;(require 'chat-pack)
-(require 'clojure-pack)
-(require 'clojurescript-pack)
-(require 'caml-pack)
-(require 'modeline-pack)
-(require 'twitter-pack)
-(require 'puppet-pack)
-;; (require 'chrome-pack)
-(require 'macro-pack)
-(require 'scala-pack)
-(require 'groovy-pack)
-(require 'php-pack)
-(require 'stumpwm-pack)
-(require 'pres-pack)
-(require 'irc-pack)
-(require 'help-pack)
+(defvar prelude-packs/packs (prelude-packs/pack-names prelude-packs-dir))
+
+(defmacro prelude-packs/load-pack-definition (pack-name)
+  "Define a function to permit the loading of a pack with name PACK-NAME."
+  `(defun ,(intern (format "prelude-packs/load-%s!" pack-name)) ()
+     ,(format "Load the pack %s." pack-name)
+     (interactive)
+     (require ',pack-name)))
+
+;; Install the interactive commands to load the different packs
+(eval
+ `(progn
+    ,@(mapcar (lambda (pack)
+                `(prelude-packs/load-pack-definition ,pack))
+              prelude-packs/packs)))
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
