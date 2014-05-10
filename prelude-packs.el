@@ -84,8 +84,6 @@
     (-filter #'file-directory-p it)
     (mapcar #'intern it)))
 
-;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
-
 (defvar prelude-packs/packs (prelude-packs/pack-names prelude-packs-dir))
 
 (defmacro prelude-packs/load-pack-definition (pack-name)
@@ -101,6 +99,42 @@
     ,@(mapcar (lambda (pack)
                 `(prelude-packs/load-pack-definition ,pack))
               prelude-packs/packs)))
+
+;; start with some default packs loaded
+
+(mapc (lambda (fn) (funcall fn)) '(
+                                   prelude-packs/load-prelude-pack!
+                                   prelude-packs/load-install-packages-pack!
+                                   prelude-packs/load-shell-pack!
+                                   prelude-packs/load-theme-pack!
+                                   prelude-packs/load-browser-pack!
+                                   prelude-packs/load-scratch-pack!
+                                   prelude-packs/load-modeline-pack!
+                                   prelude-packs/load-buffer-pack!
+                                   prelude-packs/load-orgmode-pack!
+                                   prelude-packs/load-chrome-pack!
+                                   prelude-packs/load-git-pack!
+                                   prelude-packs/load-help-pack!
+                                   prelude-packs/load-mail-pack!
+                                   prelude-packs/load-twitter-pack!
+                                   prelude-packs/load-blog-pack!
+                                   prelude-packs/load-irc-pack!
+                                   prelude-packs/load-pres-pack!
+                                   ;; prelude-packs/load-chat-pack!
+                                   ;; prelude-packs/load-el-get-pack!
+                                   prelude-packs/load-stumpwm-pack!
+                                   ;; prelude-packs/load-macro-pack!
+                                   prelude-packs/load-lisp-pack!
+                                   prelude-packs/load-elisp-pack!
+                                   prelude-packs/load-haskell-pack!
+                                   prelude-packs/load-clojure-pack!
+                                   ;; prelude-packs/load-clojurescript-pack!
+                                   ;; prelude-packs/load-caml-pack!
+                                   ;; prelude-packs/load-scala-pack!
+                                   ;; prelude-packs/load-php-pack!
+                                   prelude-packs/load-groovy-pack!
+                                   ;; prelude-packs/load-puppet-pack!
+                                   ))
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
