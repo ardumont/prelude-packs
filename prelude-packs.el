@@ -79,11 +79,12 @@
 
 ;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
-(require 'install-packages-pack)
-(require 'prelude-pack)
-(require 'elisp-pack)
 (require 'shell-pack)
+(require 'install-packages-pack)
 (require 'theme-pack)
+(require 'prelude-pack)
+
+(require 'elisp-pack)
 (require 'el-get-pack)
 (require 'buffer-pack)
 (require 'scratch-pack)
