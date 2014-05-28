@@ -17,40 +17,42 @@ A prelude packs setup to use with the most excellent [prelude](https://github.co
 
 Some packs still need some lovin' but most are ready:
 
-- [install-packages-pack](https://github.com/ardumont/install-packages-pack)  Some installation repository setup + function to install list of packages
-- [scratch-pack](https://github.com/ardumont/scratch-pack)                    Tinkering pack
-- [blog-pack](https://github.com/ardumont/blog-pack)                          Blog setup to rapidly post article from org-mode to wordpress
-- [haskell-pack](https://github.com/ardumont/haskell-pack)                    Haskell environment setup
-- [orgmode-pack](https://github.com/ardumont/orgmode-pack)                    Some org-mode specificities
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          Lisp environment setup
-- [buffer-pack](https://github.com/ardumont/buffer-pack)                      Some buffer manipulation functions
-- [git-pack](https://github.com/ardumont/git-pack)                            Git specific setup
-- [mail-pack](https://github.com/ardumont/mail-pack)                          Email accounts setup (one or multiple accounts through authentication file setup)
-- [shell-pack](https://github.com/ardumont/shell-pack)                        Shell setup
-- [browser-pack](https://github.com/ardumont/browser-pack)                    Browser specific tryouts
-- [chat-pack](https://github.com/ardumont/chat-pack)                          IRC setup
-- [clojure-pack](https://github.com/ardumont/clojure-pack)                    Clojure override from emacs-live's defaults + other stuff
-- [clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        Clojurescript setup
-- [lisp-pack](https://github.com/ardumont/lisp-pack)                          All lisp (clojure, common-lisp) setup pack
-- [elisp-pack](https://github.com/ardumont/elisp-pack)                        Emacs-lisp pack (more specific than the previous one)
-- [macro-pack](https://github.com/ardumont/macro-pack)                        Macro setup
-- [caml-pack](https://github.com/ardumont/caml-pack)                          ML family languages setup
-- [twitter-pack](https://github.com/ardumont/twitter-pack)                    Twitter setup
-- [puppet-pack](https://github.com/ardumont/puppet-pack)                      Puppet setup
-- [chrome-pack](https://github.com/ardumont/chrome-pack)                      Chrome setup
-- [scala-pack](https://github.com/ardumont/scala-pack)                        Scala pack
-- [el-get-pack](https://github.com/ardumont/el-get-pack)                      Attempt to permit the use of el-get
-- [groovy-pack](https://github.com/ardumont/groovy-pack)                      Pack to add groovy mode
-- [modeline-pack](https://github.com/ardumont/modeline-pack)                  Improve modeline rendering
-- [php-pack](https://github.com/ardumont/php-pack)                            PHP mode
-- [prelude-pack](https://github.com/ardumont/prelude-pack)                    A pack to override some prelude core default (bindings mostly)
-- [stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    Stumpwm tinkering from the REPL
-- [pres-pack](https://github.com/ardumont/pres-pack)                          Pack to make presentation fast (using org-mode and org-reveal and revealjs)
-- [irc-pack](https://github.com/ardumont/irc-pack)                            Pack to setup IRC once with .netrc file
+Pack name                                                                   | Description
+----------------------------------------------------------------------------|-----------------------------------------------------------------------------------
+[install-packages-pack](https://github.com/ardumont/install-packages-pack)  | Some installation repository setup + function to install list of packages
+[scratch-pack](https://github.com/ardumont/scratch-pack)                    | Tinkering pack
+[blog-pack](https://github.com/ardumont/blog-pack)                          | Blog setup to rapidly post article from org-mode to wordpress
+[haskell-pack](https://github.com/ardumont/haskell-pack)                    | Haskell environment setup
+[orgmode-pack](https://github.com/ardumont/orgmode-pack)                    | Some org-mode specificities
+[lisp-pack](https://github.com/ardumont/lisp-pack)                          | Lisp environment setup
+[buffer-pack](https://github.com/ardumont/buffer-pack)                      | Some buffer manipulation functions
+[git-pack](https://github.com/ardumont/git-pack)                            | Git specific setup
+[mail-pack](https://github.com/ardumont/mail-pack)                          | Email accounts setup (one or multiple accounts through authentication file setup)
+[shell-pack](https://github.com/ardumont/shell-pack)                        | Shell setup
+[browser-pack](https://github.com/ardumont/browser-pack)                    | Browser specific tryouts
+[chat-pack](https://github.com/ardumont/chat-pack)                          | IRC setup
+[clojure-pack](https://github.com/ardumont/clojure-pack)                    | Clojure override from emacs-live's defaults + other stuff
+[clojurescript-pack](https://github.com/ardumont/clojurescript-pack)        | Clojurescript setup
+[lisp-pack](https://github.com/ardumont/lisp-pack)                          | All lisp (clojure, common-lisp) setup pack
+[elisp-pack](https://github.com/ardumont/elisp-pack)                        | Emacs-lisp pack (more specific than the previous one)
+[macro-pack](https://github.com/ardumont/macro-pack)                        | Macro setup
+[caml-pack](https://github.com/ardumont/caml-pack)                          | ML family languages setup
+[twitter-pack](https://github.com/ardumont/twitter-pack)                    | Twitter setup
+[puppet-pack](https://github.com/ardumont/puppet-pack)                      | Puppet setup
+[chrome-pack](https://github.com/ardumont/chrome-pack)                      | Chrome setup
+[scala-pack](https://github.com/ardumont/scala-pack)                        | Scala pack
+[el-get-pack](https://github.com/ardumont/el-get-pack)                      | Attempt to permit the use of el-get
+[groovy-pack](https://github.com/ardumont/groovy-pack)                      | Pack to add groovy mode
+[modeline-pack](https://github.com/ardumont/modeline-pack)                  | Improve modeline rendering
+[php-pack](https://github.com/ardumont/php-pack)                            | PHP mode
+[prelude-pack](https://github.com/ardumont/prelude-pack)                    | A pack to override some prelude core default (bindings mostly)
+[stumpwm-pack](https://github.com/ardumont/stumpwm-pack)                    | Stumpwm tinkering from the REPL
+[pres-pack](https://github.com/ardumont/pres-pack)                          | Pack to make presentation fast (using [org-mode](http://orgmode.org/), [org-reveal](https://github.com/yjwen/org-reveal/) and [reveal.js](http://lab.hakim.se/reveal-js/#/))
+[irc-pack](https://github.com/ardumont/irc-pack)                            | Pack to setup IRC once with .netrc file
 
 *Note*
 This pack is an orchestrator.
-You still need to setup those packs independently for the overall to be fully functional.
+You still need to configure those packs independently for the overall to be fully functional.
 Report yourself to each pack's README.md file to know what are those steps.
 
 # Install
@@ -80,7 +82,7 @@ git clone git@github.com:ardumont/prelude-packs.git --recursive
 ### Default pack needed
 
 If you want to use one of those packs, you need at minimum [install-packages-pack](https://github.com/ardumont/install-packages-pack).
-This one is in charge of setuping different repositories (marmalade, milkbox, elpa, etc...).
+This one is in charge of configuring different repositories (marmalade, melpa, melpa-stable, milkbox, elpa, etc...).
 
 Also, it installs a utility function `install-packs` to download packages from those repositories.
 This utility function is used throughout all the [referenced packs](#pack-list).
@@ -159,3 +161,9 @@ emacs --daemon
 ```
 
 This will install emacs packages needed if they are not already installed.
+
+## Faster start
+
+Compiling the code will help.
+
+<kbd>M-x prelude-packs/byte-compile!</kbd>
