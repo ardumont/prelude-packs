@@ -66,16 +66,16 @@
 
 ;; #### prelude-packs
 
-(defvar prelude-packs-dir "~/.prelude-packs"
+(defvar prelude-packs-root-folder "~/.prelude-packs"
   "The root dir of prelude-packs distribution.")
 
 ;; add subfolder to the load-path
-(prelude-add-subfolders-to-load-path prelude-packs-dir)
+(prelude-add-subfolders-to-load-path prelude-packs-root-folder)
 
 (defun prelude-packs/byte-compile! ()
   "Byte-compile all your dotfiles again."
   (interactive)
-  (byte-recompile-directory prelude-packs-dir 0 'do-force-recompile))
+  (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
 
 ;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
