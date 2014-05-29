@@ -33,6 +33,30 @@
 ;;; Code:
 
 
+(defvar prelude-packs-root-folder "~/.prelude-packs"
+  "The root dir of prelude-packs distribution.")
+
+(defun prelude-packs/byte-compile! ()
+  "Byte-compile all your prelude-packs modules to speed start-up."
+  (interactive)
+  (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
+
+(defun prelude-packs/init-dependencies! ()
+  "Initialize prelude-packs using the combo pallet/cask."
+  (require 'cask "~/.cask/cask.el")
+  (require 'pallet)
+
+  (unless (file-exists-p (pallet--cask-file))
+    (pallet-init))
+
+  (cask-initialize))
+
+;; Initialize dependencies
+(prelude-packs/init-dependencies!)
+
+;; add subfolder to the load-path
+(prelude-add-subfolders-to-load-path prelude-packs-root-folder)
+
 ;; #### Standard prelude
 
 ;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
@@ -65,19 +89,6 @@
 (require 'prelude-xml)
 
 ;; #### prelude-packs
-
-(defvar prelude-packs-root-folder "~/.prelude-packs"
-  "The root dir of prelude-packs distribution.")
-
-;; add subfolder to the load-path
-(prelude-add-subfolders-to-load-path prelude-packs-root-folder)
-
-(defun prelude-packs/byte-compile! ()
-  "Byte-compile all your dotfiles again."
-  (interactive)
-  (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
-
-;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
 (require 'shell-pack)
 (require 'install-packages-pack)
