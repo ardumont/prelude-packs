@@ -5,7 +5,7 @@
 ;; Author: Antoine R. Dumont <eniotna.t AT gmail.com>
 ;; Maintainer: Antoine R. Dumont <eniotna.t AT gmail.com>
 ;; Version: 0.0.2
-;; Package-Requires:
+;; Package-Requires: ((dash "2.6.0"))
 ;; Keywords: prelude packs
 ;; URL: https://github.com/ardumont/prelude-packs
 
