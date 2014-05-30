@@ -45,6 +45,10 @@
 (defun prelude-packs/init-dependencies! ()
   "Initialize prelude-packs using the combo pallet/cask."
   (require 'cask "~/.cask/cask.el")
+
+  (unless (package-installed-p 'pallet)
+    (package-install 'pallet))
+
   (require 'pallet)
 
   (unless (file-exists-p (pallet--cask-file))
