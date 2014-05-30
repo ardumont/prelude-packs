@@ -39,6 +39,7 @@
 (defun prelude-packs/byte-compile! ()
   "Byte-compile all your prelude-packs modules to speed start-up."
   (interactive)
+  (prelude-recompile-init)
   (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
 
 (defun prelude-packs/init-dependencies! ()
