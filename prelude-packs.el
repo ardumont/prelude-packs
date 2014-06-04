@@ -121,6 +121,7 @@
 ;; (require 'chrome-pack)
 (require 'macro-pack)
 (require 'scala-pack)
+(require 'java-pack)
 (require 'groovy-pack)
 (require 'php-pack)
 (require 'stumpwm-pack)
