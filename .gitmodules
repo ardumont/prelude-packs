@@ -91,3 +91,6 @@
 [submodule "help-pack"]
 	path = help-pack
 	url = git@github.com:ardumont/help-pack.git
+[submodule "java-pack"]
+	path = java-pack
+	url = git@github.com:ardumont/java-pack.git
