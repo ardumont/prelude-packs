@@ -94,3 +94,6 @@
 [submodule "java-pack"]
 	path = java-pack
 	url = git@github.com:ardumont/java-pack.git
+[submodule "ctags-pack"]
+	path = ctags-pack
+	url = git@github.com:ardumont/ctags-pack
