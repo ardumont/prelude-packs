@@ -101,7 +101,7 @@
 (require 'theme-pack)
 (require 'prelude-pack)
 
-(require 'ctags-pack)
+;;(require 'ctags-pack)
 (require 'elisp-pack)
 (require 'el-get-pack)
 (require 'buffer-pack)
