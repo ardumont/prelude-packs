@@ -42,22 +42,22 @@
   (prelude-recompile-init)
   (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
 
-(defun prelude-packs/init-dependencies! ()
-  "Initialize prelude-packs using the combo pallet/cask."
-  (require 'cask "~/.cask/cask.el")
+;; (defun prelude-packs/init-dependencies! ()
+;;   "Initialize prelude-packs using the combo pallet/cask."
+;;   (require 'cask "~/.cask/cask.el")
 
-  (unless (package-installed-p 'pallet)
-    (package-install 'pallet))
+;;   (unless (package-installed-p 'pallet)
+;;     (package-install 'pallet))
 
-  (require 'pallet)
+  ;; (require 'pallet)
 
-  (unless (file-exists-p (pallet--cask-file))
-    (pallet-init))
+  ;; (unless (file-exists-p (pallet--cask-file))
+  ;;   (pallet-init))
 
-  (cask-initialize))
+  ;; (cask-initialize))
 
 ;; Initialize dependencies
-(prelude-packs/init-dependencies!)
+;;(prelude-packs/init-dependencies!)
 
 ;; add subfolder to the load-path
 (prelude-add-subfolders-to-load-path prelude-packs-root-folder)
