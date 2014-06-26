@@ -4,7 +4,7 @@ WDIR=$(dirname $0)
 
 # Pre-requisite - install cask and init the Cask file
 
-$WDIR/install-cask.sh
+bash $WDIR/install-cask.sh
 
 # Deploy prelude-packs
 
