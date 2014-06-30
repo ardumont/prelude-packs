@@ -97,3 +97,6 @@
 [submodule "ctags-pack"]
 	path = ctags-pack
 	url = git@github.com:ardumont/ctags-pack
+[submodule "marmalade-pack"]
+	path = marmalade-pack
+	url = git@github.com:ardumont/marmalade-pack.git
