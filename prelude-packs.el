@@ -113,7 +113,7 @@
 (require 'pres-pack)
 (require 'irc-pack)
 (require 'help-pack)
-(require 'marmalade-pack)
+;; (require 'marmalade-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
