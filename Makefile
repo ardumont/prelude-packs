@@ -13,3 +13,6 @@ update-modules:
 push-sub:
 	~/bin/git/git-push-submodules.sh
 	make push
+
+clean-elc:
+	find -type f -iname "*.elc" -exec rm {} \;
