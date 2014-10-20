@@ -114,6 +114,7 @@
 (require 'irc-pack)
 (require 'help-pack)
 (require 'marmalade-pack)
+(require 'js-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
