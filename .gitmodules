@@ -100,3 +100,6 @@
 [submodule "marmalade-pack"]
 	path = marmalade-pack
 	url = git@github.com:ardumont/marmalade-pack.git
+[submodule "js-pack"]
+	path = js-pack
+	url = git@github.com:ardumont/js-pack.git
