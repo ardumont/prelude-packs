@@ -103,3 +103,6 @@
 [submodule "js-pack"]
 	path = js-pack
 	url = git@github.com:ardumont/js-pack.git
+[submodule "purescript-pack"]
+	path = purescript-pack
+	url = git@github.com:ardumont/purescript-pack.git
