@@ -115,6 +115,7 @@
 (require 'help-pack)
 (require 'marmalade-pack)
 (require 'js-pack)
+(require 'purescript-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
