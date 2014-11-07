@@ -94,6 +94,7 @@
 (require 'orgmode-pack)
 (require 'lisp-pack)
 (require 'git-pack)
+(require 'mercurial-pack)
 (require 'mail-pack)
 (require 'browser-pack)
 ;;(require 'chat-pack)
