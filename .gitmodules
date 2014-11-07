@@ -106,3 +106,6 @@
 [submodule "purescript-pack"]
 	path = purescript-pack
 	url = git@github.com:ardumont/purescript-pack.git
+[submodule "mercurial-pack"]
+	path = mercurial-pack
+	url = git@github.com:ardumont/mercurial-pack.git
