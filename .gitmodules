@@ -112,3 +112,6 @@
 [submodule "nix-pack"]
 	path = nix-pack
 	url = git@github.com:ardumont/nix-pack.git
+[submodule "slime"]
+	path = slime
+	url = git@github.com:ardumont/slime.git
