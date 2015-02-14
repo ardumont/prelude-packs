@@ -97,6 +97,7 @@
 (require 'mercurial-pack)
 (require 'mail-pack)
 (require 'browser-pack)
+(require 'conkeror-pack)
 ;;(require 'chat-pack)
 (require 'clojure-pack)
 (require 'clojurescript-pack)
