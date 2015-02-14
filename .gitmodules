@@ -115,3 +115,6 @@
 [submodule "slime"]
 	path = slime
 	url = git@github.com:ardumont/slime.git
+[submodule "conkeror-pack"]
+	path = conkeror-pack
+	url = git@github.com:ardumont/conkeror-pack.git
