@@ -118,6 +118,7 @@
 (require 'marmalade-pack)
 (require 'js-pack)
 (require 'purescript-pack)
+(require 'idris-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
