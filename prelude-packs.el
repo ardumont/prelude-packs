@@ -81,6 +81,7 @@
 
 (require 'install-packages-pack)
 (require 'shell-pack)
+(require 'nix-pack)
 (require 'theme-pack)
 (require 'prelude-pack)
 
