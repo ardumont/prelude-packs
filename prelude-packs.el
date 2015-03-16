@@ -79,8 +79,8 @@
 
 ;; #### prelude-packs
 
-(require 'shell-pack)
 (require 'install-packages-pack)
+(require 'shell-pack)
 (require 'theme-pack)
 (require 'prelude-pack)
 
