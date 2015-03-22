@@ -7,7 +7,6 @@ CURRENT_EMACS=${EMACS:-$(which emacs)}
 echo "*** Emacs version ***"
 echo "CURRENT_EMACS = $CURRENT_EMACS"
 "$CURRENT_EMACS" --version
-#echo "CURRENT_CMD = $CURRENT_CMD"
 
 $CURRENT_EMACS --version
 
