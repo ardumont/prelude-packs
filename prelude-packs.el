@@ -121,6 +121,7 @@
 (require 'purescript-pack)
 (require 'idris-pack)
 (require 'popup-pack)
+(require 'python-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
