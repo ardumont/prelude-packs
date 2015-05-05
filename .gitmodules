@@ -124,3 +124,6 @@
 [submodule "popup-pack"]
 	path = popup-pack
 	url = git@github.com:ardumont/popup-pack.git
+[submodule "python-pack"]
+	path = python-pack
+	url = git@github.com:ardumont/python-pack.git
