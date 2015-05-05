@@ -120,6 +120,7 @@
 (require 'js-pack)
 (require 'purescript-pack)
 (require 'idris-pack)
+(require 'popup-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
