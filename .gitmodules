@@ -121,3 +121,6 @@
 [submodule "idris-pack"]
 	path = idris-pack
 	url = git@github.com:ardumont/idris-pack.git
+[submodule "popup-pack"]
+	path = popup-pack
+	url = git@github.com:ardumont/popup-pack.git
