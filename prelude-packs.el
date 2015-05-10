@@ -80,9 +80,12 @@
 ;; #### prelude-packs
 
 ;; core deps
-;; (require 'package)
-;; (package-install 'use-package)
+(require 'package)
+(package-install 'use-package)
 (require 'use-package)
+
+;; prelude-packs definition
+(require 'install-packages-pack)
 (require 'shell-pack)
 (require 'nix-pack)
 (require 'theme-pack)
