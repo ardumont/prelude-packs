@@ -79,7 +79,10 @@
 
 ;; #### prelude-packs
 
-(require 'install-packages-pack)
+;; core deps
+;; (require 'package)
+;; (package-install 'use-package)
+(require 'use-package)
 (require 'shell-pack)
 (require 'nix-pack)
 (require 'theme-pack)
