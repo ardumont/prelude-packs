@@ -117,7 +117,7 @@
 (require 'irc-pack)
 (require 'help-pack)
 (require 'marmalade-pack)
-(require 'js-pack)
+;; (require 'js-pack)
 (require 'purescript-pack)
 (require 'idris-pack)
 (require 'popup-pack)
