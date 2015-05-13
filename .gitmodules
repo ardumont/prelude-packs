@@ -127,3 +127,6 @@
 [submodule "python-pack"]
 	path = python-pack
 	url = git@github.com:ardumont/python-pack.git
+[submodule "graph-pack"]
+	path = graph-pack
+	url = git@github.com:ardumont/graph-pack.git
