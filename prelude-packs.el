@@ -128,6 +128,7 @@
 (require 'idris-pack)
 (require 'popup-pack)
 (require 'python-pack)
+(require 'graph-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
