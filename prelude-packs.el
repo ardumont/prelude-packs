@@ -42,8 +42,27 @@
   (prelude-recompile-init)
   (byte-recompile-directory prelude-packs-root-folder 0 'do-force-recompile))
 
-;; add subfolder to the load-path
-(prelude-add-subfolders-to-load-path prelude-packs-root-folder)
+(defun prelude-pack-path (pack)
+  "Compute path to the prelude-pack PACK."
+  (format "%s/%s" prelude-packs-root-folder pack))
+
+;; prelude-core's deps
+(require 'package)
+(package-install 'use-package)
+(require 'use-package)
+
+(defmacro use (pack)
+  "A macro to ease the prelude-pack PACK's loading.
+Use: \(use theme-pack\) expands to:
+\(use-package theme-pack :load-path \"~/prelude-packs/theme-pack/theme-pack.\"\)"
+  `(use-package ,pack :load-path ,(prelude-pack-path pack)))
+
+(defconst prelude-pack-use-font-lock-keywords
+  '(("(\\(use\\)\\_>[ \t']*\\(\\(?:\\sw\\|\\s_\\)+\\)?"
+     (1 font-lock-keyword-face)
+     (2 font-lock-constant-face nil t))))
+
+(font-lock-add-keywords 'emacs-lisp-mode prelude-pack-use-font-lock-keywords)
 
 ;; #### Standard prelude
 
@@ -79,57 +98,53 @@
 
 ;; #### prelude-packs
 
-;; core deps
-(require 'package)
-(package-install 'use-package)
-(require 'use-package)
-
 ;; prelude-packs definition
-(require 'install-packages-pack)
-(require 'shell-pack)
-(require 'nix-pack)
-(require 'theme-pack)
-(require 'prelude-pack)
+(use install-packages-pack)
+(use shell-pack)
+(use nix-pack)
+(use theme-pack)
 
-;;(require 'ctags-pack)
-(require 'elisp-pack)
-(require 'el-get-pack)
-(require 'buffer-pack)
-(require 'scratch-pack)
-(require 'blog-pack)
-(require 'haskell-pack)
-(require 'orgmode-pack)
-(require 'lisp-pack)
-(require 'git-pack)
-(require 'mercurial-pack)
-(require 'mail-pack)
-(require 'browser-pack)
-(require 'conkeror-pack)
-;;(require 'chat-pack)
-(require 'clojure-pack)
-(require 'clojurescript-pack)
-(require 'caml-pack)
-(require 'modeline-pack)
-(require 'twitter-pack)
-(require 'puppet-pack)
-;; (require 'chrome-pack)
-(require 'macro-pack)
-(require 'scala-pack)
-(require 'java-pack)
-(require 'groovy-pack)
-(require 'php-pack)
-(require 'stumpwm-pack)
-(require 'pres-pack)
-(require 'irc-pack)
-(require 'help-pack)
-(require 'marmalade-pack)
-;; (require 'js-pack)
-(require 'purescript-pack)
-(require 'idris-pack)
-(require 'popup-pack)
-(require 'python-pack)
-(require 'graph-pack)
-(require 'viewer-pack)
+(use prelude-pack)
+
+;;(use ctags-pack)
+(use elisp-pack)
+(use el-get-pack)
+(use buffer-pack)
+(use scratch-pack)
+(use blog-pack)
+(use haskell-pack)
+(use orgmode-pack)
+(use lisp-pack)
+(use git-pack)
+(use mercurial-pack)
+(use mail-pack)
+(use browser-pack)
+(use conkeror-pack)
+;;(use chat-pack)
+(use clojure-pack)
+(use clojurescript-pack)
+(use caml-pack)
+(use modeline-pack)
+(use twitter-pack)
+(use puppet-pack)
+;; (use chrome-pack)
+(use macro-pack)
+(use scala-pack)
+(use java-pack)
+(use groovy-pack)
+(use php-pack)
+(use stumpwm-pack)
+(use pres-pack)
+(use irc-pack)
+(use help-pack)
+(use marmalade-pack)
+;; (use js-pack)
+(use purescript-pack)
+(use idris-pack)
+(use popup-pack)
+(use python-pack)
+(use graph-pack)
+(use viewer-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
