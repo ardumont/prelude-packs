@@ -130,3 +130,6 @@
 [submodule "graph-pack"]
 	path = graph-pack
 	url = git@github.com:ardumont/graph-pack.git
+[submodule "viewer-pack"]
+	path = viewer-pack
+	url = git@github.com:ardumont/viewer-pack.git
