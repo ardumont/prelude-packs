@@ -129,6 +129,7 @@
 (require 'popup-pack)
 (require 'python-pack)
 (require 'graph-pack)
+(require 'viewer-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
