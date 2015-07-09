@@ -120,7 +120,7 @@ Use: \(use theme-pack\) expands to:
 (use mail-pack)
 (use browser-pack)
 (use conkeror-pack)
-;;(use chat-pack)
+(use chat-pack)
 (use clojure-pack)
 (use clojurescript-pack)
 (use caml-pack)
