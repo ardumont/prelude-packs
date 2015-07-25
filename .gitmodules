@@ -133,3 +133,6 @@
 [submodule "viewer-pack"]
 	path = viewer-pack
 	url = git@github.com:ardumont/viewer-pack.git
+[submodule "helm-pack"]
+	path = helm-pack
+	url = git@github.com:ardumont/helm-pack.git
