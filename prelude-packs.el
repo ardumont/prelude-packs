@@ -145,6 +145,7 @@ Use: \(use theme-pack\) expands to:
 (use python-pack)
 (use graph-pack)
 (use viewer-pack)
+(use helm-pack)
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
