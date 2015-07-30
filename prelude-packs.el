@@ -96,6 +96,11 @@ Use: \(use theme-pack\) expands to:
 (require 'prelude-xml)
 (require 'prelude-company)
 
+;; #### specific stuff
+(let ((custom-work-file "~/work/.emacs.d/init.el"))
+  (when (file-exists-p custom-work-file)
+    (load-file custom-work-file)))
+
 ;; #### prelude-packs
 
 ;; prelude-packs definition
