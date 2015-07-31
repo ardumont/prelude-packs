@@ -33,6 +33,10 @@
 ;;; Code:
 
 
+;; ####
+;; #### prelude-packs internal
+;; ####
+
 (defvar prelude-packs-root-folder "~/.prelude-packs"
   "The root dir of prelude-packs distribution.")
 
@@ -49,7 +53,11 @@
 ;; prelude-core's deps
 (require 'package)
 (package-install 'use-package)
-(require 'use-package)
+
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)                ;; if you use :diminish
+(require 'bind-key)                ;; if you use any :bind variant
 
 (defmacro use (pack)
   "A macro to ease the prelude-pack PACK's loading.
@@ -64,12 +72,14 @@ Use: \(use theme-pack\) expands to:
 
 (font-lock-add-keywords 'emacs-lisp-mode prelude-pack-use-font-lock-keywords)
 
+;; ####
 ;; #### Standard prelude
+;; ####
 
 ;;; Uncomment the modules you'd like to use and reload the buffer - M-x eval-buffer
 
 (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
-;; (require 'prelude-helm) ;; Interface for narrowing and search
+(require 'prelude-helm) ;; Interface for narrowing and search
 
 (require 'prelude-c)
 (require 'prelude-clojure)
@@ -96,12 +106,9 @@ Use: \(use theme-pack\) expands to:
 (require 'prelude-xml)
 (require 'prelude-company)
 
-;; #### specific stuff
-(let ((custom-work-file "~/work/.emacs.d/init.el"))
-  (when (file-exists-p custom-work-file)
-    (load-file custom-work-file)))
-
+;; ####
 ;; #### prelude-packs
+;; ####
 
 ;; prelude-packs definition
 (use install-packages-pack)
@@ -151,6 +158,14 @@ Use: \(use theme-pack\) expands to:
 (use graph-pack)
 (use viewer-pack)
 (use helm-pack)
+
+;; ####
+;; #### work specific stuff
+;; ####
+
+(let ((custom-work-file "~/work/.emacs.d/init.el"))
+  (when (file-exists-p custom-work-file)
+    (load-file custom-work-file)))
 
 (provide 'prelude-packs)
 ;;; prelude-packs ends here
