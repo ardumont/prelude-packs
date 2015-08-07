@@ -124,6 +124,7 @@ Use: \(use theme-pack\) expands to:
 (use buffer-pack)
 (use scratch-pack)
 (use blog-pack)
+(use wiki-pack)
 (use haskell-pack)
 (use orgmode-pack)
 (use lisp-pack)
