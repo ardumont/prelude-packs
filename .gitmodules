@@ -136,3 +136,6 @@
 [submodule "helm-pack"]
 	path = helm-pack
 	url = git@github.com:ardumont/helm-pack.git
+[submodule "wiki-pack"]
+	path = wiki-pack
+	url = git@github.com:ardumont/wiki-pack.git
