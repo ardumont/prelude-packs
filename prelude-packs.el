@@ -50,10 +50,12 @@
   "Compute path to the prelude-pack PACK."
   (format "%s/%s" prelude-packs-root-folder pack))
 
-;; prelude-core's deps
+;; prelude-packs core's deps
 (require 'package)
 (package-install 'use-package)
+(custom-set-variables '(use-package-always-ensure t)) ;; always fetch non present packages
 
+;; from use-package's doc
 (eval-when-compile
   (require 'use-package))
 (require 'diminish)                ;; if you use :diminish
@@ -63,7 +65,9 @@
   "A macro to ease the prelude-pack PACK's loading.
 Use: \(use theme-pack\) expands to:
 \(use-package theme-pack :load-path \"~/prelude-packs/theme-pack/theme-pack.\"\)"
-  `(use-package ,pack :load-path ,(prelude-pack-path pack)))
+  `(use-package ,pack
+     :load-path ,(prelude-pack-path pack)
+     :ensure nil))
 
 (defconst prelude-pack-use-font-lock-keywords
   '(("(\\(use\\)\\_>[ \t']*\\(\\(?:\\sw\\|\\s_\\)+\\)?"
