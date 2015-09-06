@@ -150,7 +150,7 @@ Use: \(use theme-pack\) expands to:
 (use java-pack)
 (use groovy-pack)
 (use php-pack)
-(use stumpwm-pack)
+;;(use stumpwm-pack)
 (use pres-pack)
 (use irc-pack)
 (use help-pack)
