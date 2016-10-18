@@ -52,7 +52,7 @@
 
 ;; prelude-packs core's deps
 (require 'package)
-(package-install 'use-package)
+
 ;; (custom-set-variables '(use-package-always-ensure nil)) ;; always fetch non present packages
 
 ;; from use-package's doc
