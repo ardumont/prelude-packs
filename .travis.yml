@@ -1,29 +1,28 @@
-language: emacs-lisp
+language: nix
 git:
-  # deactivate ci-travis's automatic dealing with submodules when cloning - http://docs.travis-ci.com/user/build-configuration/#Git-Submodules
+  # deactivate ci-travis's automatic dealing with submodules when
+  # cloning -
+  # http://docs.travis-ci.com/user/build-configuration/#Git-Submodules
   submodules: false
-env:
-  global:
-    - PATH=$HOME/.evm/bin:$PATH
-  matrix:
-    # - EVM_EMACS=emacs-24.1-bin
-    # - EVM_EMACS=emacs-24.2-bin
-    - EVM_EMACS=emacs-24.3-bin
-    - EVM_EMACS=emacs-24.4-bin    
-    - EVM_EMACS=emacs-24.5-bin
-before_install:
-  # evm install
-  - curl -fsSkL https://gist.github.com/rejeep/7736123/raw > travis.sh && source ./travis.sh
-  # install the matrix's emacs version
-  - evm install $EVM_EMACS --use --skip
-  - emacs --version
+os: linux
+before_script:
   # to permit to change the git url to public ones
-  - sed -e 's/git@github.com:/http:\/\/git@github.com\//g' -i .gitmodules
+  - sed -e 's/git@github.com:/http:\/\/github.com\//g' -i .gitmodules
   - git submodule update --init
+  # install emacs from nix
+  - git clone --depth=10 http://github.com/ardumont/dot-files ~/dot-files
+  - rm -rf ~/.nixpkgs
+  - ln -nsf ~/dot-files/.nixpkgs ~/.nixpkgs
+  - ln -nsf ~/dot-files/nixos/emacs.nix ~/.nixpkgs/emacs.nix
+  - pushd ~/.nixpkgs/
+  - source ~/.nix-profile/etc/profile.d/nix.sh
+  - nix-build emacs.nix
+  - ./result/bin/emacs --version
+  - popd
   # - deploy prelude
   - rm -rf ~/.emacs.d
-  - git clone http://git@github.com/bbatsov/prelude.git ~/.emacs.d
+  - git clone --depth=10 http://github.com/bbatsov/prelude.git ~/.emacs.d
   # - deploy prelude-packs
   - $(pwd)/deploy.sh
 script:
-  ./run-travis-ci.sh
+  ~/.nixpkgs/result/bin/emacs --no-window-system --batch --load ~/.emacs.d/init.el
