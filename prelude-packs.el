@@ -148,7 +148,7 @@ Use: \(use theme-pack\) expands to:
 (use macro-pack)
 (use scala-pack)
 (use java-pack)
-(use groovy-pack)
+;;(use groovy-pack)
 (use php-pack)
 ;;(use stumpwm-pack)
 (use pres-pack)
