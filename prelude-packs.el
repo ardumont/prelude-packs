@@ -164,6 +164,12 @@ Use: \(use theme-pack\) expands to:
 (use viewer-pack)
 (use helm-pack)
 
+(use-package theme-pack
+  :init
+  (theme-pack-set-size)
+  (theme-pack-dark)
+  (global-theme-pack-mode))
+
 ;; ####
 ;; #### work specific stuff
 ;; ####
