@@ -153,7 +153,7 @@ Use: \(use theme-pack\) expands to:
 ;;(use stumpwm-pack)
 (use pres-pack)
 (use irc-pack)
-(use help-pack)
+;; (use help-pack)
 (use marmalade-pack)
 ;; (use js-pack)
 (use purescript-pack)
