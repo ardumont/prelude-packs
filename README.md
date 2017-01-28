@@ -74,8 +74,11 @@ git clone git://github.com/bbatsov/prelude.git ~/.emacs.d
 Clone the repository.
 
 ```sh
-git clone git@github.com:ardumont/prelude-packs.git --recursive
+mr -j4 update
 ```
+
+Note:
+mr being https://myrepos.branchable.com/
 
 ## Packs
 
