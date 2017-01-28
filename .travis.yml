@@ -1,14 +1,9 @@
 language: nix
-git:
-  # deactivate ci-travis's automatic dealing with submodules when
-  # cloning -
-  # http://docs.travis-ci.com/user/build-configuration/#Git-Submodules
-  submodules: false
 os: linux
 before_script:
   # to permit to change the git url to public ones
-  - sed -e 's/git@github.com:/http:\/\/github.com\//g' -i .gitmodules
-  - git submodule update --init
+  - sed -e 's/git@github.com:/http:\/\/github.com\//g' -i .mrconfig
+  - mr -j4 update
   # install emacs from nix
   - git clone --depth=10 http://github.com/ardumont/dot-files ~/dot-files
   - rm -rf ~/.nixpkgs

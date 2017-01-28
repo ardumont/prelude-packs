@@ -1,0 +1,190 @@
+[install-packages-pack]
+checkout = git clone git@github.com:ardumont/install-packages-pack.git
+update = git pull --rebase
+
+[el-get-pack]
+checkout = git clone git@github.com:ardumont/el-get-pack.git
+update = git pull --rebase
+
+[buffer-pack]
+checkout = git clone git@github.com:ardumont/buffer-pack.git
+update = git pull --rebase
+
+[scratch-pack]
+checkout = git clone git@github.com:ardumont/scratch-pack.git
+update = git pull --rebase
+
+[blog-pack]
+checkout = git clone git@github.com:ardumont/blog-pack.git
+update = git pull --rebase
+
+[browser-pack]
+checkout = git clone git@github.com:ardumont/browser-pack.git
+update = git pull --rebase
+
+[caml-pack]
+checkout = git clone git@github.com:ardumont/caml-pack.git
+update = git pull --rebase
+
+[chat-pack]
+checkout = git clone git@github.com:ardumont/chat-pack.git
+update = git pull --rebase
+
+[chrome-pack]
+checkout = git clone git@github.com:ardumont/chrome-pack.git
+update = git pull --rebase
+
+[clojure-pack]
+checkout = git clone git@github.com:ardumont/clojure-pack.git
+update = git pull --rebase
+
+[clojurescript-pack]
+checkout = git clone git@github.com:ardumont/clojurescript-pack.git
+update = git pull --rebase
+
+[elisp-pack]
+checkout = git clone git@github.com:ardumont/elisp-pack.git
+update = git pull --rebase
+
+[git-pack]
+checkout = git clone git@github.com:ardumont/git-pack.git
+update = git pull --rebase
+
+[groovy-pack]
+checkout = git clone git@github.com:ardumont/groovy-pack.git
+update = git pull --rebase
+
+[haskell-pack]
+checkout = git clone git@github.com:ardumont/haskell-pack.git
+update = git pull --rebase
+
+[lisp-pack]
+checkout = git clone git@github.com:ardumont/lisp-pack.git
+update = git pull --rebase
+
+[macro-pack]
+checkout = git clone git@github.com:ardumont/macro-pack.git
+update = git pull --rebase
+
+[mail-pack]
+checkout =
+  git clone git@github.com:ardumont/mail-pack.git
+  cd mail-pack
+  git checkout notmuch
+update = git pull --rebase
+
+[modeline-pack]
+checkout = git clone git@github.com:ardumont/modeline-pack.git
+update = git pull --rebase
+
+[orgmode-pack]
+checkout = git clone git@github.com:ardumont/orgmode-pack.git
+update = git pull --rebase
+
+[php-pack]
+checkout = git clone git@github.com:ardumont/php-pack.git
+update = git pull --rebase
+
+[puppet-pack]
+checkout = git clone git@github.com:ardumont/puppet-pack.git
+update = git pull --rebase
+
+[scala-pack]
+checkout = git clone git@github.com:ardumont/scala-pack.git
+update = git pull --rebase
+
+[shell-pack]
+checkout = git clone git@github.com:ardumont/shell-pack.git
+update = git pull --rebase
+
+[stumpwm-pack]
+checkout = git clone git@github.com:ardumont/stumpwm-pack.git
+update = git pull --rebase
+
+[twitter-pack]
+checkout = git clone git@github.com:ardumont/twitter-pack.git
+update = git pull --rebase
+
+[theme-pack]
+checkout = git clone git@github.com:ardumont/theme-pack.git
+update = git pull --rebase
+
+[prelude-pack]
+checkout = git clone git@github.com:ardumont/prelude-pack.git
+update = git pull --rebase
+
+[pres-pack]
+checkout = git clone git@github.com:ardumont/pres-pack.git
+update = git pull --rebase
+
+[irc-pack]
+checkout = git clone git@github.com:ardumont/irc-pack.git
+update = git pull --rebase
+
+[help-pack]
+checkout = git clone git@github.com:ardumont/help-pack.git
+update = git pull --rebase
+
+[java-pack]
+checkout = git clone git@github.com:ardumont/java-pack.git
+update = git pull --rebase
+
+[ctags-pack]
+checkout = git clone git@github.com:ardumont/ctags-pack
+update = git pull --rebase
+
+[marmalade-pack]
+checkout = git clone git@github.com:ardumont/marmalade-pack.git
+update = git pull --rebase
+
+[js-pack]
+checkout = git clone git@github.com:ardumont/js-pack.git
+update = git pull --rebase
+
+[purescript-pack]
+checkout = git clone git@github.com:ardumont/purescript-pack.git
+update = git pull --rebase
+
+[mercurial-pack]
+checkout = git clone git@github.com:ardumont/mercurial-pack.git
+update = git pull --rebase
+
+[nix-pack]
+checkout = git clone git@github.com:ardumont/nix-pack.git
+update = git pull --rebase
+
+[slime]
+checkout = git clone git@github.com:ardumont/slime.git
+update = git pull --rebase
+
+[conkeror-pack]
+checkout = git clone git@github.com:ardumont/conkeror-pack.git
+update = git pull --rebase
+
+[idris-pack]
+checkout = git clone git@github.com:ardumont/idris-pack.git
+update = git pull --rebase
+
+[popup-pack]
+checkout = git clone git@github.com:ardumont/popup-pack.git
+update = git pull --rebase
+
+[python-pack]
+checkout = git clone git@github.com:ardumont/python-pack.git
+update = git pull --rebase
+
+[graph-pack]
+checkout = git clone git@github.com:ardumont/graph-pack.git
+update = git pull --rebase
+
+[viewer-pack]
+checkout = git clone git@github.com:ardumont/viewer-pack.git
+update = git pull --rebase
+
+[helm-pack]
+checkout = git clone git@github.com:ardumont/helm-pack.git
+update = git pull --rebase
+
+[wiki-pack]
+checkout = git clone git@github.com:ardumont/wiki-pack.git
+update = git pull --rebase
