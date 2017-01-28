@@ -118,7 +118,6 @@ Use: \(use theme-pack\) expands to:
 (use install-packages-pack)
 (use shell-pack)
 (use nix-pack)
-(use theme-pack)
 
 (use prelude-pack)
 
@@ -164,6 +163,7 @@ Use: \(use theme-pack\) expands to:
 (use viewer-pack)
 (use helm-pack)
 
+(use theme-pack)
 (use-package theme-pack
   :init
   (theme-pack-set-size)
